@@ -3,23 +3,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Tarot de Marsella</title>
-		<link rel="icon" sizes="16x16" type="image/png" href="TarotMarsellaFavIcon_16x16.png"/>
-		<link rel="icon" sizes="192x192" type="image/png" href="TarotMarsellaFavIcon_192x192.png"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		<link rel="icon" sizes="16x16" type="image/png" href="TarotMarsellaFavIcon_16x16.png">
+		<link rel="icon" sizes="192x192" type="image/png" href="TarotMarsellaFavIcon_192x192.png">
 		<style>
 			*{font-family:Arial}
-			html,body{max-height:999999px;min-width:1024px;-webkit-text-size-adjust:none;background-color:#575757}
+			html,body{background-color:#575757;margin:0;padding:0}
 			span{display:block;cursor:pointer;line-height:1.7;font-weight:bold;padding-left:5px}
 			span:hover{background-color:#3A76B1;color:white}
 			.container{display:flex}
-			.cardList{background-color:#cecece;border-radius:10px;overflow:hidden;min-width:300px}
-			.content{background-color:#cecece;border-radius:10px;overflow:hidden;margin-left:10px;padding:5px;line-height:1.7}
+			.cardList{background-color:#cecece;overflow:hidden;width:300px;margin-left:-300px;transition: 0.5s}
+			.visible{margin-left:0 !important;transition: 0.5s}
+			.wrapper{width:100%}
+			.header{display:flex;background-color:#cecece;}
+			.title{display:inline-block;margin:0 auto;font-size:24px;line-height:1.8;font-weight:bold}
+			.hamburger{padding:10px;cursor:pointer}
+			.content{background-color:#cecece;border-radius:10px;overflow:hidden;margin:10px;padding:5px;line-height:1.7}
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div>
-				<div class="cardList">
+				<div id="menuContent" class="cardList">
 					<span>&#8226; I - El Mago</span>
 					<span>&#8226; II - La Papisa o La Sacerdotisa</span>
 					<span>&#8226; III - La Emperatriz</span>
@@ -48,7 +52,15 @@
 					<span>&#8226; Arcanos Menores - Bastos</span>
 				</div>
 			</div>
-			<div>
+			<div class="wrapper">
+				<div class="header">
+					<svg class="hamburger" width="24" height="24" viewBox="0 0 30 30">
+						<rect width="30" height="6"/>
+						<rect y="24" width="30" height="6"/>
+						<rect y="12" width="30" height="6"/>
+					</svg>
+					<div class="title">TAROT DE MARSELLA</div>	
+				</div>
 				<div class="content"><b>SELECCIONE UNA CARTA DEL LISTADO.</b></div>
 			</div>
 		</div>
@@ -82,9 +94,19 @@
 				"<b>As de Bastos</b><br><br>Al derecho: creaci&oacute;n, ayuda, suerte, buena oportunidad, realizaci&oacute;n de un proyecto, triunfo en los negocios, nuevo trabajo, nuevos proyectos. Fertilidad, embarazo, virilidad.<br><br>Al rev&eacute;s: faltan ideas, poca creatividad, peleas, proyectos fracasados, debilidad, escasas energ&iacute;as.<br><br><b>Dos de Bastos</b><br><br>Al derecho: confianza en s&iacute; mismo y en sus ideas, desarrollar sus ideas o proyectos.<br><br>Al rev&eacute;s: orgullo, ambici&oacute;n, prepotencia, dudas, miedo a los enfrentamientos.<br><br><b>Tres de Bastos</b><br><br>Al derecho: buenas oportunidades de trabajo, colaboraci&oacute;n, &eacute;xito laboral o comercial.<br><br>Al rev&eacute;s: desilusi&oacute;n por negocio, falta de motivaci&oacute;n, falta de expectativas.<br><br><b>Cuatro de Bastos</b><br><br>Al derecho: &Eacute;xito, culminaci&oacute;n de un proyecto o negocio, prosperidad, fuerza mental y ps&iacute;quica para plasmar un proyecto y desarrollarlo con &eacute;xito.<br><br>Al rev&eacute;s: retrasos, fracasos, mediocridad, obst&aacute;culos, contrariedades.<br><br><b>Cinco de Bastos</b><br><br>Al derecho: problemas laborales, mucha competencia. Deber&aacute;n trabajar muy duro, para alcanzar sus objetivos.<br><br>Al rev&eacute;s: problemas legales por negligencia, alguien que busca problemas, obligaci&oacute;n de afrontar las discusiones.<br><br><b>Seis de Bastos</b><br><br>Al derecho: triunfo, &eacute;xito a costa de mucho trabajo, recoger&aacute;n lo que hayan sembrado, prosperidad.<br><br>Al rev&eacute;s: retrasos, retrasos burocr&aacute;ticos, enredos administrativos que se resuelven, miedo al adversario.<br><br><b>Siete de Bastos</b><br><br>Al derecho:  &eacute;xito dif&iacute;cil de conseguir pero realizable, buenas perspectivas de un negocio o en el trabajo, toma de decisiones importantes.<br><br>Al rev&eacute;s: indecisi&oacute;n, indiferencia, abandono de la lucha.<br><br><b>Ocho de Bastos</b><br><br>Al derecho: cambios positivos, noticias, llamadas, desbloqueo y reanudaci&oacute;n de los contactos laborales, actividad, producci&oacute;n,<br><br>Al rev&eacute;s: malas noticias, despido, retrasos, robo, malversaciones.<br><br><b>Nueve de Bastos</b><br><br>Al derecho: productividad, &eacute;xito garantizado, ganancias en los negocios, victoria ante los adversarios, capacidad de enjuiciamiento.<br><br>Al rev&eacute;s: falta de clientes, proyectos rechazados, pasividad, debilidad.<br><br><b>Diez de Bastos</b><br><br>Al derecho: progreso en su vida profesional, avanzar hacia sus objetivos, claridad de ideas, &eacute;xito en el trabajo y buen enjuiciamiento. Buena salud, estabilidad familiar,<br><br>Al rev&eacute;s: envidias, rabia contra la felicidad ajena, mentiras, no saber delegar.<br><br><b>Sota de Bastos</b><br><br>Al derecho: personas de pelo rubio o pelirrojo, ojos azules o avellana o marrones, muy predispuesta a todo, ambiciosa, en&eacute;rgica, fuerte, inteligente, impetuoso, nervioso. Portador de noticias.<br><br>Al rev&eacute;s: persona falsa, dominante, superficial, ambiciosa, ego&iacute;sta.<br><br><b>Caballo de Bastos</b><br><br>Al derecho: hombre de pelo rubio o pelirrojo, de ojos azules, de buena posici&oacute;n impetuoso, visceral, le encanta la acci&oacute;n y no se lo piensa demasiado. Indica mudanzas, cambios repentinos, partidas sin avisar, gente que crea inseguridad con su comportamiento.<br><br>Al rev&eacute;s: inestable, imprevisible, irreflexivo, temerario, pendenciero, alguien en quien no se puede confiar.<br><br><b>Reina de Bastos</b><br><br>Al derecho: mujer de cabello rubio o pelirrojo, ojos azules o marrones, tranquila y equilibrada, hogare&ntilde;a, inteligente pero pr&aacute;ctica, amable, generosa, cari&ntilde;osa con sus hijos, firme y autoritaria pero con tacto, buena jefa y trabajadora.<br><br>Al rev&eacute;s: mujer dominante, autoritaria, celosa y posesiva con sus parejas, obstinada, castradora con sus hijos.<br><br><b>Rey de Bastos</b><br><br>Al derecho: hombre cabello rubio o pelirrojo, ojos azules o avellana,  noble, generoso, equilibrado, inteligente, hogare&ntilde;o y tradicional, adora a su familia, amable, honrado, consciente de la realidad, hombre de negocios, autoritario pero justo, buen jefe, humano.<br><br>Al rev&eacute;s: hombre insoportable, mal jefe, falto de humanidad, cambiante, fr&iacute;o y despiadado, mani&aacute;tico, cr&iacute;tico."
 			];
 
+			const handleNavBar = () => {
+				if (document.getElementById("menuContent").className === "cardList") {
+					document.getElementById("menuContent").className = "cardList visible";
+				}
+				else {
+					document.getElementById("menuContent").className = "cardList";
+				}
+			}
+
 			const showContent = (index) => {
 				const itemText = document.getElementsByTagName("span")[index].innerHTML;
 				document.getElementsByClassName("content")[0].innerHTML = "<b>" + itemText.substring(itemText.indexOf(" ") + 1, itemText.length) + "</b><br><br>" + arcanos[index];
+				handleNavBar();
 				window.scrollTo(0, 0);
 			}
 
@@ -116,6 +138,7 @@
 				document.getElementsByTagName("span")[23].addEventListener("click", () => { showContent(23); });
 				document.getElementsByTagName("span")[24].addEventListener("click", () => { showContent(24); });
 				document.getElementsByTagName("span")[25].addEventListener("click", () => { showContent(25); });
+				document.getElementsByTagName("svg")[0].addEventListener("click", () => { handleNavBar(); });
 			});
 		</script>
 	</body>
