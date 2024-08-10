@@ -25,32 +25,32 @@
 		<div class="container">
 			<div>
 				<div id="menuContent" class="cardList">
-					<span>&#8226; I - El Mago</span>
-					<span>&#8226; II - La Papisa</span>
-					<span>&#8226; III - La Emperatriz</span>
-					<span>&#8226; IV - El Emperador</span>
-					<span>&#8226; V - El Papa</span>
-					<span>&#8226; VI - El Enamorado</span>
-					<span>&#8226; VII - El Carro</span>
-					<span>&#8226; VIII - La Justicia</span>
-					<span>&#8226; IX - El Ermita&ntilde;o</span>
-					<span>&#8226; X - La Rueda de la Fortuna</span>
-					<span>&#8226; XI - La Fuerza</span>
-					<span>&#8226; XII - El Colgado</span>
-					<span>&#8226; XIII - La Muerte</span>
-					<span>&#8226; XIV - La Templanza</span>
-					<span>&#8226; XV - El Diablo</span>
-					<span>&#8226; XVI - La Torre</span>
-					<span>&#8226; XVII - La Estrella</span>
-					<span>&#8226; XVIII - La Luna</span>
-					<span>&#8226; XIX - El Sol</span>
-					<span>&#8226; XX - El Juicio</span>
-					<span>&#8226; XXI - El Mundo</span>
-					<span>&#8226; XXII - El Loco</span>
-					<span>&#8226; Arcanos Menores - Oros</span>
-					<span>&#8226; Arcanos Menores - Copas</span>
-					<span>&#8226; Arcanos Menores - Espadas</span>
-					<span>&#8226; Arcanos Menores - Bastos</span>
+					<span>I - El Mago</span>
+					<span>II - La Papisa</span>
+					<span>III - La Emperatriz</span>
+					<span>IV - El Emperador</span>
+					<span>V - El Papa</span>
+					<span>VI - El Enamorado</span>
+					<span>VII - El Carro</span>
+					<span>VIII - La Justicia</span>
+					<span>IX - El Ermita&ntilde;o</span>
+					<span>X - La Rueda de la Fortuna</span>
+					<span>XI - La Fuerza</span>
+					<span>XII - El Colgado</span>
+					<span>XIII - La Muerte</span>
+					<span>XIV - La Templanza</span>
+					<span>XV - El Diablo</span>
+					<span>XVI - La Torre</span>
+					<span>XVII - La Estrella</span>
+					<span>XVIII - La Luna</span>
+					<span>XIX - El Sol</span>
+					<span>XX - El Juicio</span>
+					<span>XXI - El Mundo</span>
+					<span>XXII - El Loco</span>
+					<span>Arcanos Menores - Oros</span>
+					<span>Arcanos Menores - Copas</span>
+					<span>Arcanos Menores - Espadas</span>
+					<span>Arcanos Menores - Bastos</span>
 				</div>
 			</div>
 			<div class="wrapper">
@@ -106,7 +106,7 @@
 
 			const showContent = (index) => {
 				const itemText = document.getElementsByTagName("span")[index].innerHTML;
-				document.getElementsByClassName("content")[0].innerHTML = "<b>" + itemText.substring(itemText.indexOf(" ") + 1, itemText.length) + "</b><br><br>" + arcanos[index];
+				document.getElementsByClassName("content")[0].innerHTML = "<b>" + itemText + "</b><br><br>" + arcanos[index];
 				handleNavBar();
 				window.scrollTo(0, 0);
 			}
