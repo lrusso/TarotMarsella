@@ -15,54 +15,123 @@
 			.cardList{max-height:999999px;-webkit-text-size-adjust:none;background-color:#cecece;overflow:hidden;width:300px;margin-left:-300px;transition: 0.5s}
 			.visible{margin-left:0 !important;transition: 0.5s}
 			.wrapper{width:100%}
-			.header{display:flex;background-color:#cecece;align-items:center}
-			.title{max-height:999999px;-webkit-text-size-adjust:none;display:inline-block;margin:0 auto;font-size:24px;font-weight:bold;overflow:hidden;white-space:nowrap}
-			.hamburger{padding:10px;cursor:pointer}
-			.content{max-height:999999px;-webkit-text-size-adjust:none;background-color:#cecece;border-radius:10px;overflow:hidden;margin:10px;padding:5px;line-height:1.7}
+			.cardWrapper{max-height:999999px;-webkit-text-size-adjust:none;background-color:#cecece;border-radius:10px;overflow:hidden;margin:10px;padding:5px;line-height:1.7}
+			.selector{width:100%}
+
+			@media (orientation:landscape)
+				{
+				.cardWrapper{width:100%;}
+				.content{display:flex}
+				}
+
+			@media (orientation:portrait)
+				{
+				.cardWrapper{display:flex;flex-direction:column}
+				.selector{display:inline-block}
+				}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div>
-				<div id="menuContent" class="cardList">
-					<span>I - El Mago</span>
-					<span>II - La Papisa</span>
-					<span>III - La Emperatriz</span>
-					<span>IV - El Emperador</span>
-					<span>V - El Papa</span>
-					<span>VI - El Enamorado</span>
-					<span>VII - El Carro</span>
-					<span>VIII - La Justicia</span>
-					<span>IX - El Ermita&ntilde;o</span>
-					<span>X - La Rueda de la Fortuna</span>
-					<span>XI - La Fuerza</span>
-					<span>XII - El Colgado</span>
-					<span>XIII - La Muerte</span>
-					<span>XIV - La Templanza</span>
-					<span>XV - El Diablo</span>
-					<span>XVI - La Torre</span>
-					<span>XVII - La Estrella</span>
-					<span>XVIII - La Luna</span>
-					<span>XIX - El Sol</span>
-					<span>XX - El Juicio</span>
-					<span>XXI - El Mundo</span>
-					<span>XXII - El Loco</span>
-					<span>Arcanos Menores - Oros</span>
-					<span>Arcanos Menores - Copas</span>
-					<span>Arcanos Menores - Espadas</span>
-					<span>Arcanos Menores - Bastos</span>
-				</div>
-			</div>
 			<div class="wrapper">
-				<div class="header">
-					<svg class="hamburger" width="1.5em" height="1.5em" viewBox="0 0 30 30">
-						<rect width="30" height="6"/>
-						<rect y="24" width="30" height="6"/>
-						<rect y="12" width="30" height="6"/>
-					</svg>
-					<div class="title">TAROT DE MARSELLA</div>	
+				<div class="content">
+					<div class="cardWrapper">
+						<select class="selector">
+							<option>- carta 1 -</option>
+							<option>I - El Mago</option>
+							<option>II - La Papisa</option>
+							<option>III - La Emperatriz</option>
+							<option>IV - El Emperador</option>
+							<option>V - El Papa</option>
+							<option>VI - El Enamorado</option>
+							<option>VII - El Carro</option>
+							<option>VIII - La Justicia</option>
+							<option>IX - El Ermita&ntilde;o</option>
+							<option>X - La Rueda de la Fortuna</option>
+							<option>XI - La Fuerza</option>
+							<option>XII - El Colgado</option>
+							<option>XIII - La Muerte</option>
+							<option>XIV - La Templanza</option>
+							<option>XV - El Diablo</option>
+							<option>XVI - La Torre</option>
+							<option>XVII - La Estrella</option>
+							<option>XVIII - La Luna</option>
+							<option>XIX - El Sol</option>
+							<option>XX - El Juicio</option>
+							<option>XXI - El Mundo</option>
+							<option>XXII - El Loco</option>
+							<option>Arcanos Menores - Oros</option>
+							<option>Arcanos Menores - Copas</option>
+							<option>Arcanos Menores - Espadas</option>
+							<option>Arcanos Menores - Bastos</option>
+						</select>
+						<div class="cardInfo"></div>
+					</div>
+					<div class="cardWrapper">
+						<select class="selector">
+							<option>- carta 2 -</option>
+							<option>I - El Mago</option>
+							<option>II - La Papisa</option>
+							<option>III - La Emperatriz</option>
+							<option>IV - El Emperador</option>
+							<option>V - El Papa</option>
+							<option>VI - El Enamorado</option>
+							<option>VII - El Carro</option>
+							<option>VIII - La Justicia</option>
+							<option>IX - El Ermita&ntilde;o</option>
+							<option>X - La Rueda de la Fortuna</option>
+							<option>XI - La Fuerza</option>
+							<option>XII - El Colgado</option>
+							<option>XIII - La Muerte</option>
+							<option>XIV - La Templanza</option>
+							<option>XV - El Diablo</option>
+							<option>XVI - La Torre</option>
+							<option>XVII - La Estrella</option>
+							<option>XVIII - La Luna</option>
+							<option>XIX - El Sol</option>
+							<option>XX - El Juicio</option>
+							<option>XXI - El Mundo</option>
+							<option>XXII - El Loco</option>
+							<option>Arcanos Menores - Oros</option>
+							<option>Arcanos Menores - Copas</option>
+							<option>Arcanos Menores - Espadas</option>
+							<option>Arcanos Menores - Bastos</option>
+						</select>
+						<div class="cardInfo"></div>
+					</div>
+					<div class="cardWrapper">
+						<select class="selector">
+							<option>- carta 3 -</option>
+							<option>I - El Mago</option>
+							<option>II - La Papisa</option>
+							<option>III - La Emperatriz</option>
+							<option>IV - El Emperador</option>
+							<option>V - El Papa</option>
+							<option>VI - El Enamorado</option>
+							<option>VII - El Carro</option>
+							<option>VIII - La Justicia</option>
+							<option>IX - El Ermita&ntilde;o</option>
+							<option>X - La Rueda de la Fortuna</option>
+							<option>XI - La Fuerza</option>
+							<option>XII - El Colgado</option>
+							<option>XIII - La Muerte</option>
+							<option>XIV - La Templanza</option>
+							<option>XV - El Diablo</option>
+							<option>XVI - La Torre</option>
+							<option>XVII - La Estrella</option>
+							<option>XVIII - La Luna</option>
+							<option>XIX - El Sol</option>
+							<option>XX - El Juicio</option>
+							<option>XXI - El Mundo</option>
+							<option>XXII - El Loco</option>
+							<option>Arcanos Menores - Oros</option>
+							<option>Arcanos Menores - Copas</option>
+							<option>Arcanos Menores - Espadas</option>
+							<option>Arcanos Menores - Bastos</option>
+						</select>
+						<div class="cardInfo"></div>
+					</div>
 				</div>
-				<div class="content"><b>HAGA CLICK EN EL &Iacute;CONO DE LA ESQUINA SUPERIOR IZQUIERDA PARA SELECCIONAR UNA CARTA Y LEER SU SIGNIFICADO.</b></div>
 			</div>
 		</div>
 		<script>
@@ -95,51 +164,24 @@
 				"<b>As de Bastos</b><br><br>Al derecho: creaci&oacute;n, ayuda, suerte, buena oportunidad, realizaci&oacute;n de un proyecto, triunfo en los negocios, nuevo trabajo, nuevos proyectos, fertilidad, embarazo, virilidad.<br><br>Al rev&eacute;s: faltan ideas, poca creatividad, peleas, proyectos fracasados, debilidad, escasas energ&iacute;as.<br><br><b>Dos de Bastos</b><br><br>Al derecho: confianza en s&iacute; mismo y en sus ideas, desarrollar sus ideas o proyectos.<br><br>Al rev&eacute;s: orgullo, ambici&oacute;n, prepotencia, dudas, miedo a los enfrentamientos.<br><br><b>Tres de Bastos</b><br><br>Al derecho: buenas oportunidades de trabajo, colaboraci&oacute;n, &eacute;xito laboral o comercial.<br><br>Al rev&eacute;s: desilusi&oacute;n por negocio, falta de motivaci&oacute;n, falta de expectativas.<br><br><b>Cuatro de Bastos</b><br><br>Al derecho: &Eacute;xito, culminaci&oacute;n de un proyecto o negocio, prosperidad, fuerza mental y ps&iacute;quica para plasmar un proyecto y desarrollarlo con &eacute;xito.<br><br>Al rev&eacute;s: retrasos, fracasos, mediocridad, obst&aacute;culos, contrariedades.<br><br><b>Cinco de Bastos</b><br><br>Al derecho: problemas laborales, mucha competencia. Deber&aacute;n trabajar muy duro, para alcanzar sus objetivos.<br><br>Al rev&eacute;s: problemas legales por negligencia, alguien que busca problemas, obligaci&oacute;n de afrontar las discusiones.<br><br><b>Seis de Bastos</b><br><br>Al derecho: triunfo, &eacute;xito a costa de mucho trabajo, recoger&aacute;n lo que hayan sembrado, prosperidad.<br><br>Al rev&eacute;s: retrasos, retrasos burocr&aacute;ticos, enredos administrativos que se resuelven, miedo al adversario.<br><br><b>Siete de Bastos</b><br><br>Al derecho:  &eacute;xito dif&iacute;cil de conseguir pero realizable, buenas perspectivas de un negocio o en el trabajo, toma de decisiones importantes.<br><br>Al rev&eacute;s: indecisi&oacute;n, indiferencia, abandono de la lucha.<br><br><b>Ocho de Bastos</b><br><br>Al derecho: cambios positivos, noticias, llamadas, desbloqueo y reanudaci&oacute;n de los contactos laborales, actividad, producci&oacute;n.<br><br>Al rev&eacute;s: malas noticias, despido, retrasos, robo, malversaciones.<br><br><b>Nueve de Bastos</b><br><br>Al derecho: productividad, &eacute;xito garantizado, ganancias en los negocios, victoria ante los adversarios, capacidad de enjuiciamiento.<br><br>Al rev&eacute;s: falta de clientes, proyectos rechazados, pasividad, debilidad.<br><br><b>Diez de Bastos</b><br><br>Al derecho: progreso en su vida profesional, avanzar hacia sus objetivos, claridad de ideas, &eacute;xito en el trabajo, buen enjuiciamiento, buena salud, estabilidad familiar.<br><br>Al rev&eacute;s: envidias, enojo contra la felicidad ajena, mentiras, no saber delegar.<br><br><b>Sota de Bastos</b><br><br>Al derecho: personas de pelo rubio o pelirrojo, ojos azules o avellana o marrones, muy predispuesta a todo, ambiciosa, en&eacute;rgica, fuerte, inteligente, impetuoso, nervioso, portador de noticias.<br><br>Al rev&eacute;s: persona falsa, dominante, superficial, ambiciosa, ego&iacute;sta.<br><br><b>Caballo de Bastos</b><br><br>Al derecho: hombre de pelo rubio o pelirrojo, de ojos azules, de buena posici&oacute;n impetuoso, visceral, le encanta la acci&oacute;n y no se lo piensa demasiado. Indica mudanzas, cambios repentinos, partidas sin avisar, gente que crea inseguridad con su comportamiento.<br><br>Al rev&eacute;s: inestable, imprevisible, irreflexivo, temerario, pendenciero, alguien en quien no se puede confiar.<br><br><b>Reina de Bastos</b><br><br>Al derecho: mujer de cabello rubio o pelirrojo, ojos azules o marrones, tranquila y equilibrada, hogare&ntilde;a, inteligente pero pr&aacute;ctica, amable, generosa, cari&ntilde;osa con sus hijos, firme y autoritaria pero con tacto, buena jefa y trabajadora.<br><br>Al rev&eacute;s: mujer dominante, autoritaria, celosa y posesiva con sus parejas, obstinada, castradora con sus hijos.<br><br><b>Rey de Bastos</b><br><br>Al derecho: hombre cabello rubio o pelirrojo, ojos azules o avellana,  noble, generoso, equilibrado, inteligente, hogare&ntilde;o y tradicional, adora a su familia, amable, honrado, consciente de la realidad, hombre de negocios, autoritario pero justo, buen jefe, humano.<br><br>Al rev&eacute;s: hombre insoportable, mal jefe, falto de humanidad, cambiante, fr&iacute;o y despiadado, mani&aacute;tico, cr&iacute;tico."
 			];
 
-			const handleNavBar = () => {
-				if (document.getElementById("menuContent").className === "cardList") {
-					document.getElementById("menuContent").className = "cardList visible";
-				}
-				else {
-					document.getElementById("menuContent").className = "cardList";
-				}
-			}
-
 			const showContent = (index) => {
-				const itemText = document.getElementsByTagName("span")[index].innerHTML;
-				document.getElementsByClassName("content")[0].innerHTML = "<b>" + itemText + "</b><br><br>" + arcanos[index];
-				handleNavBar();
-				window.scrollTo(0, 0);
-			}
+				const selectedCard = document.getElementsByClassName("selector")[index].selectedIndex;
+				if (selectedCard === 0) {
+					document.getElementsByClassName("cardInfo")[index].innerHTML = "";
+					return;
+				}
+				const itemText = document.getElementsByClassName("selector")[index].value;
+				document.getElementsByClassName("cardInfo")[index].innerHTML = "<b>" + itemText + "</b><br><br>" + arcanos[selectedCard - 1];
+			};
 
 			window.addEventListener("load", () => {
 				window.scrollTo(0, 0);
-				document.getElementsByTagName("span")[0].addEventListener("click", () => { showContent(0); });
-				document.getElementsByTagName("span")[1].addEventListener("click", () => { showContent(1); });
-				document.getElementsByTagName("span")[2].addEventListener("click", () => { showContent(2); });
-				document.getElementsByTagName("span")[3].addEventListener("click", () => { showContent(3); });
-				document.getElementsByTagName("span")[4].addEventListener("click", () => { showContent(4); });
-				document.getElementsByTagName("span")[5].addEventListener("click", () => { showContent(5); });
-				document.getElementsByTagName("span")[6].addEventListener("click", () => { showContent(6); });
-				document.getElementsByTagName("span")[7].addEventListener("click", () => { showContent(7); });
-				document.getElementsByTagName("span")[8].addEventListener("click", () => { showContent(8); });
-				document.getElementsByTagName("span")[9].addEventListener("click", () => { showContent(9); });
-				document.getElementsByTagName("span")[10].addEventListener("click", () => { showContent(10); });
-				document.getElementsByTagName("span")[11].addEventListener("click", () => { showContent(11); });
-				document.getElementsByTagName("span")[12].addEventListener("click", () => { showContent(12); });
-				document.getElementsByTagName("span")[13].addEventListener("click", () => { showContent(13); });
-				document.getElementsByTagName("span")[14].addEventListener("click", () => { showContent(14); });
-				document.getElementsByTagName("span")[15].addEventListener("click", () => { showContent(15); });
-				document.getElementsByTagName("span")[16].addEventListener("click", () => { showContent(16); });
-				document.getElementsByTagName("span")[17].addEventListener("click", () => { showContent(17); });
-				document.getElementsByTagName("span")[18].addEventListener("click", () => { showContent(18); });
-				document.getElementsByTagName("span")[19].addEventListener("click", () => { showContent(19); });
-				document.getElementsByTagName("span")[20].addEventListener("click", () => { showContent(20); });
-				document.getElementsByTagName("span")[21].addEventListener("click", () => { showContent(21); });
-				document.getElementsByTagName("span")[22].addEventListener("click", () => { showContent(22); });
-				document.getElementsByTagName("span")[23].addEventListener("click", () => { showContent(23); });
-				document.getElementsByTagName("span")[24].addEventListener("click", () => { showContent(24); });
-				document.getElementsByTagName("span")[25].addEventListener("click", () => { showContent(25); });
-				document.getElementsByTagName("svg")[0].addEventListener("click", () => { handleNavBar(); });
+				document.getElementsByClassName("selector")[0].selectedIndex = 0;
+				document.getElementsByClassName("selector")[1].selectedIndex = 0;
+				document.getElementsByClassName("selector")[2].selectedIndex = 0;
+				document.getElementsByClassName("selector")[0].addEventListener("click", () => { showContent(0); });
+				document.getElementsByClassName("selector")[1].addEventListener("click", () => { showContent(1); });
+				document.getElementsByClassName("selector")[2].addEventListener("click", () => { showContent(2); });
 			});
 		</script>
 	</body>
